@@ -1,0 +1,24 @@
+nav{
+  background-color: #b0bec5;
+}
+
+ul{
+  max-width: 75rem;
+  width: auto;
+  display: flex;
+  list-style-type: none;
+  padding: 0 2rem;
+  gap: .25rem;
+  margin: 0 auto;
+}
+
+a{
+  display: block;
+  padding: .5rem;
+  font-weight: 700;
+  color: #0b2273;
+  text-decoration: none;
+}
+a:hover{
+  color: #031244;
+}
