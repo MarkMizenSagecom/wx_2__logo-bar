@@ -3,13 +3,13 @@
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
-    "start": "npm run serve:single-spa",
+    "start": "ng serve --port 4300",
     "build": "npm run build:single-spa",
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e",
-    "build:single-spa": "ng build --prod --deploy-url /dist/navbar --output-hashing none",
-    "serve:single-spa": "ng serve --disable-host-check --port 4300 --deploy-url http://localhost:4300/ --live-reload false"
+    "build:single-spa": "ng build navbar-single-spa --prod --deploy-url /dist/navbar --output-hashing none",
+    "serve:single-spa": "ng serve --project navbar-single-spa --disable-host-check --port 4300 --deploy-url http://localhost:4300/ --live-reload false"
   },
   "private": true,
   "dependencies": {
